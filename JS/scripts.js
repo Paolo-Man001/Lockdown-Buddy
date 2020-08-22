@@ -2,8 +2,7 @@
 //   weatherBalloon("Wellington");
 // };
 
-
-function submitLocation(){
+function submitLocation() {
   // alert("Hello!");
   let city = document.getElementById("cityName").value;
   weatherBalloon(city);
@@ -18,10 +17,15 @@ function weatherBalloon(cityName) {
     }) // Convert data to json
     .then(function (data) {
       console.log(data);
+      var x = document.getElementById("weather");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      }
       drawWeather(data);
     })
     .catch(function () {
       // catch any errors
+      document.getElementById("weather").style.display = "none";
       alert("City Not Found!\nPlease Try Again...");
     });
 }
