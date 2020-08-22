@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Local Storage Example</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Form to add a new person to the storage -->
+        <div class="form">
+            <form action="" id="personForm">
+                <p>First Name</p>
+                <input type="text" id="firstName">
+                <p>Last Name</p>
+                <input type="text" id="lastName">
+                <p>Occupation</p>
+                <input type="text" id="occupation">
+                <input type="submit" id="submit" value="Add Person!">
+            </form>
+        </div>
+
+        <!-- List which displays people in storage -->
+        <div class="data">
+            <ul id="peopleList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
